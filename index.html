@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-5 text-center fst-italic">Bookmarker</h1>
+        <div class="border border-black"></div>
+        <h4 class="favorite text-center pt-4 mb-4"> <i class="fa-solid fa-bookmark"></i>  Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h4> 
+
+        <label for=""> <i class="fa-solid fa-floppy-disk"></i> Site name</label>
+        <input type="text" class="form-control mb-4" id="name" placeholder="Bookmark Name">
+
+        <label for=""> <i class="fa-solid fa-link"></i> Site URL</label>
+        <input type="text" class="form-control mb-4" id="url" placeholder="Bookmark URL">
+
+        <button id="addBtn" disabled onclick="addBookmark()" type="submit" class="btn btn-danger text-white d-block m-auto mb-4 px-5">Submit</button>
+
+        <div class="border border-black mb-4"></div>
+
+        <table class="table text-center">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
